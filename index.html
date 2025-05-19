@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PPDB SMK Bina Informatika</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #e6f0ff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero img.logo {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #007acc;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin: 10px 0;
+      color: #003366;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .marquee {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 28px;
+      color: #003366;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .programs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .program {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .program:hover {
+      transform: scale(1.05);
+    }
+
+    .program img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .program h4 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .program p {
+      font-size: 14px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .kontak {
+      background-color: #e6e6e6;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .kontak h4 {
+      margin-top: 15px;
+    }
+
+    .kontak a {
+      color: #003366;
+    }
+
+    .formulir {
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    .formulir h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .formulir form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .formulir label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .formulir input, .formulir select, .formulir textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .formulir button {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .formulir button:hover {
+      background-color: #00509e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SMK Bina Informatika</h1>
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#program">Program</a>
+    <a href="#formulir">Daftar</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<div class="marquee">
+  <marquee>AYO DAFTAR KE SMK BINA INFORMATIKA TAHUN AJARAN 2025-2026</marquee>
+</div>
+
+<div class="hero">
+  <img src="logo.png" alt="Logo SMK Bina Informatika" class="logo">
+  <h2>Penerimaan Peserta Didik Baru</h2>
+  <p><strong>Biaya Pendaftaran:</strong> Rp 150.000</p>
+  <p><strong>Total Biaya Awal:</strong> Rp 3.800.000</p>
+  <p>Bergabunglah dan nikmati program unggulan kami!</p>
+</div>
+
+<section id="tentang">
+  <h3>Tentang Kami</h3>
+  <p>SMK Bina Informatika adalah sekolah kejuruan unggulan yang berada di bawah Yayasan Pendidikan Nurul Ilma. Kami berkomitmen mencetak lulusan yang siap kerja dan unggul di bidang teknologi, multimedia, serta keuangan.</p>
+</section>
+
+<section id="program">
+  <h3>Program Keahlian Unggulan</h3>
+  <div class="programs">
+    <div class="program">
+      <img src="rpl.jpg" alt="RPL">
+      <h4>Rekayasa Perangkat Lunak</h4>
+      <p>Program ini berfokus pada pemrograman, pembuatan aplikasi, dan pengembangan website. Siswa akan banyak belajar coding dan membuat software sendiri.</p>
+    </div>
+    <div class="program">
+      <img src="tkj.jpg" alt="TKJ">
+      <h4>Teknik Komputer dan Jaringan</h4>
+      <p>Mempelajari instalasi jaringan komputer, server, hingga maintenance perangkat keras dan sistem jaringan.</p>
+    </div>
+    <div class="program">
+      <img src="pkm.jpg" alt="PKM">
+      <h4>Perbankan dan Keuangan Makro</h4>
+      <p>Belajar akuntansi, keuangan, manajemen, hingga simulasi transaksi digital dan sistem perbankan modern.</p>
+    </div>
+    <div class="program">
+      <img src="otkp.jpg" alt="OTKP">
+      <h4>Otomatisasi Tata Kelola Perkantoran</h4>
+      <p>Belajar mengelola administrasi, surat-menyurat, serta teknologi perkantoran berbasis digital.</p>
+    </div>
+    <div class="program">
+      <img src="mm.jpg" alt="MM">
+      <h4>Multimedia</h4>
+      <p>Mengembangkan kreativitas di bidang desain grafis, fotografi, video editing, dan animasi digital.</p>
+    </div>
+  </div>
+</section>
+
+<section id="formulir" class="formulir">
+  <h2>Formulir Pendaftaran Siswa Baru</h2>
+  <form onsubmit="return kirimWhatsApp()">
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" required>
+
+    <label for="nisn">NISN</label>
+    <input type="text" id="nisn" required>
+
+    <label for="tempat">Tempat Lahir</label>
+    <input type="text" id="tempat" required>
+
+    <label for="tanggal">Tanggal Lahir</label>
+    <input type="date" id="tanggal" required>
+
+    <label for="alamat">Alamat Lengkap</label>
+    <textarea id="alamat" rows="3" required></textarea>
+
+    <label for="nohp">No. HP / WA</label>
+    <input type="text" id="nohp" required>
+
+    <label for="jurusan">Pilih Jurusan</label>
+    <select id="jurusan" required>
+      <option value="">-- Pilih --</option>
+      <option value="RPL">Rekayasa Perangkat Lunak</option>
+      <option value="TKJ">Teknik Komputer dan Jaringan</option>
+      <option value="PKM">Perbankan dan Keuangan Makro</option>
+      <option value="OTKP">Otomatisasi Tata Kelola Perkantoran</option>
+      <option value="MM">Multimedia</option>
+    </select>
+
+    <button type="submit">Kirim Pendaftaran</button>
+  </form>
+</section>
+
+<section id="kontak" class="kontak">
+  <h3>Kontak Kami</h3>
+  <h4>Email</h4>
+  <p><a href="mailto:smkbifor@gmail.com">smkbifor@gmail.com</a></p>
+  <h4>Telepon</h4>
+  <p><a href="https://wa.me/6289617354862">+62 896-1735-4862 (WhatsApp)</a></p>
+  <h4>Alamat</h4>
+  <p>Jl. Re. Abdullah No.15, RT.02/RW.01, Pasir Jaya, Bogor Barat, Jawa Barat</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 <strong>SMK Bina Informatika</strong> - Rangga Ferdiansyah. Semua hak dilindungi undang-undang.</p>
+</footer>
+
+<script>
+  function kirimWhatsApp() {
+    const nama = document.getElementById("nama").value;
+    const nisn = document.getElementById("nisn").value;
+    const tempat = document.getElementById("tempat").value;
+    const tanggal = document.getElementById("tanggal").value;
+    const alamat = document.getElementById("alamat").value;
+    const nohp = document.getElementById("nohp").value;
+    const jurusan = document.getElementById("jurusan").value;
+
+    const pesan = `Halo Admin SMK Bina Informatika, saya ingin mendaftar:\n\n` +
+      `Nama: ${nama}\nNISN: ${nisn}\nTempat/Tgl Lahir: ${tempat}, ${tanggal}\n` +
+      `Alamat: ${alamat}\nNo HP: ${nohp}\nJurusan Pilihan: ${jurusan}\n\nMohon informasi lebih lanjut.`;
+
+    const nomorAdmin = '6289617354862';
+    const link = `https://wa.me/${nomorAdmin}?text=${encodeURIComponent(pesan)}`;
+
+    window.open(link, '_blank');
+    return false;
+  }
+</script>
+
+</body>
+</html>
